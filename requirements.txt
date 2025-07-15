@@ -1,0 +1,9 @@
+pandas
+openpyxl
+numpy
+requests
+unidecode
+selenium
+beautifulsoup4
+geopy
+python-dotenv

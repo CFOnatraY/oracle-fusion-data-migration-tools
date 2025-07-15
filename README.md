@@ -1,0 +1,105 @@
+# Oracle Fusion Data Migration Tools
+
+This repository provides a suite of tools designed to support data cleaning, validation, transformation, and integration workflows related to Oracle Fusion Cloud Applications.
+
+These tools were created to assist in the migration of customer, tax, geography, and pricing data into Oracle Fusion, ensuring consistency, accuracy, and format compliance.
+
+---
+
+## 🗂️ Structure
+
+The repository is organized as follows:
+
+```bash
+oracle-fusion-data-migration-tools/
+├── README.md                    # This file
+├── requirements.txt             # Python dependencies
+├── shared_utils/               # Common utilities (e.g., __init__.py)
+└── tools/                      # Main set of functional tools
+    ├── compare_to_fix_info_displayed/
+    ├── fix_tax_tool/
+    ├── geocoded_tool/
+    ├── migration_data_cleaning_tool/
+    ├── price_list_tool/
+    ├── scrape_state_city/
+    └── split_csv_tool/
+```
+
+---
+
+## 🔧 Tools Overview
+
+Each folder under `tools/` includes its own `README.md`. Here's a summary:
+
+| Tool Name | Description |
+|-----------|-------------|
+| [`compare_to_fix_info_displayed`](tools/compare_to_fix_info_displayed/) | Compares geography names and codes across source files and XML reports from Oracle. |
+| [`fix_tax_tool`](tools/fix_tax_tool/) | Automates corrections to tax amounts and tax lines in Oracle Fusion invoices. |
+| [`geocoded_tool`](tools/geocoded_tool/) | Validates and enriches geographic data using geocoding. |
+| [`migration_data_cleaning_tool`](tools/migration_data_cleaning_tool/) | Cleans and transforms Excel files before uploading to Oracle Fusion. |
+| [`price_list_tool`](tools/price_list_tool/) | Hosts input data related to pricing strategies. |
+| [`scrape_state_city`](tools/scrape_state_city/) | Scrapes XML or UI data from Oracle Fusion to retrieve city and state names. |
+| [`split_csv_tool`](tools/split_csv_tool/) | Splits large CSV files into smaller batches for bulk upload. |
+
+---
+
+## 📦 Installation
+
+1. Clone this repository:
+	```bash
+	git clone https://github.com/CFOnatraY/oracle-fusion-data-migration-tools.git
+    git clone git@github.com:CFOnatraY/oracle-fusion-data-migration-tools.git
+	```
+
+2. Create a virtual environment (optional but recommended):
+	```bash
+	python -m venv venv
+	```
+
+3. Activate the virtual environment:
+	- On Windows:
+	```bash
+	venv\Scripts\activate
+	```
+	- On macOS/Linux:
+	```bash
+	source venv/bin/activate
+	```
+
+## 🛠️ Requirements
+
+Make sure you have Python 3.9 or above. To install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🧪 How to Use
+
+1. Navigate to the folder of the tool you want to use.
+2. Follow the usage instructions in its `README.md`.
+3. All tools are built to work with `.xlsx` or `.csv` files and are compatible with Oracle Fusion standards.
+
+---
+
+## 📂 Shared Utilities
+
+The folder `shared_utils/` contains reusable functions or modules shared across tools. It can be extended with common data loaders, validators, or transformers.
+
+---
+
+## 🤝 Contributions
+
+If you're part of a migration team or working on Oracle Fusion projects and want to contribute or reuse scripts, feel free to open a pull request or raise an issue.
+
+---
+
+## 📄 License
+
+This project is proprietary and intended for internal use within Oracle Fusion data migration contexts.
+
+## ✍️ Author
+
+Fernando Onatra

@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+
+# Virtualenv
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+.vs/
+
+# Operating system configuration files
+.DS_Store
+Thumbs.db
+
+# Logs / data / files / temporary
+*.log
+*.csv
+*.xlsx
+*.xls
+*.bak
+*.tmp
+.xml
+.txt
+*.pkl  # Python pickle files
+*.swp
+
+# Packaging files
+*.tar.gz
+*.zip
+*.whl
+
+# Selenium driver or Chrome downloaders
+*.deb
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
