@@ -12,6 +12,11 @@ This module automates the correction of tax-related issues in invoice records up
 - `transaction_number_template.xlsx`: List of transaction numbers to process.
 - `output_log_invoice_patch.csv`: Stores a log of execution results.
 
+## 🔐 Environment Variables
+
+This tool depends on a `.env` file for Oracle Fusion credentials and endpoints.  
+See the repository root for the `.env.example` template and setup instructions.
+
 ## Execution
 ```bash
 python fix_invoice_patch_flow.py

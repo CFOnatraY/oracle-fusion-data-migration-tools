@@ -76,6 +76,23 @@ pip install -r requirements.txt
 
 ---
 
+## 🔐 Environment Variables
+
+To keep sensitive credentials out of source control, all secrets and credentials are loaded from a `.env` file.
+
+Each tool that requires connection to Oracle Fusion APIs expects environment variables such as:
+
+- `CLIENT_ID`
+- `CLIENT_SECRET`
+- `TOKEN_URL`
+- `API_BASE_URL`
+- `FUSION_USERNAME`
+- `FUSION_PASSWORD`
+
+👉 Refer to `.env.example` for the full list of required variables.
+
+⚠️ Never commit your `.env` file. It is ignored via `.gitignore`.
+
 ## 🧪 How to Use
 
 1. Navigate to the folder of the tool you want to use.
