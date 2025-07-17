@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.1.0] - 2025-07-16
+
+### Added
+- Added working Selenium scripts for automating Pricing Strategies, Price Lists, and Discount Lists in Oracle Fusion (`tools/price_list_tool/`)
+- Created localized `README.md` for the `price_list_tool` with setup and execution guidance
+- Implemented `.pre-commit-config.yaml` and `.hooks/check_obfuscated_terms.sh` to enforce zero-trace policy using obfuscated terms
+- Updated main `README.md` with new sections: Environment Recommendations and Internal Trace Prevention
+
+### Changed
+- Enhanced tool description in the Tools Overview table for `price_list_tool`
+- Updated `requirements.txt` to include `webdriver-manager` dependency
+
+---
+
 ## [v1.0.0] - 2025-07-14
 
 ### Added
