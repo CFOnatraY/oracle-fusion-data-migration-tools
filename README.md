@@ -37,7 +37,7 @@ Each folder under `tools/` includes its own `README.md`. Here's a summary:
 | [`fix_tax_tool`](tools/fix_tax_tool/) | Automates corrections to tax amounts and tax lines in Oracle Fusion invoices. |
 | [`geocoded_tool`](tools/geocoded_tool/) | Validates and enriches geographic data using geocoding. |
 | [`migration_data_cleaning_tool`](tools/migration_data_cleaning_tool/) | Cleans and transforms Excel files before uploading to Oracle Fusion. |
-| [`price_list_tool`](tools/price_list_tool/) | Hosts input data related to pricing strategies. |
+| [`price_list_tool`](tools/price_list_tool/) | Automates the upload of Pricing Strategies, Price Lists, and Discount Lists in Oracle Fusion using Selenium. |
 | [`scrape_state_city`](tools/scrape_state_city/) | Scrapes XML or UI data from Oracle Fusion to retrieve city and state names. |
 | [`split_csv_tool`](tools/split_csv_tool/) | Splits large CSV files into smaller batches for bulk upload. |
 
@@ -110,6 +110,21 @@ The folder `shared_utils/` contains reusable functions or modules shared across 
 ## 🤝 Contributions
 
 If you're part of a migration team or working on Oracle Fusion projects and want to contribute or reuse scripts, feel free to open a pull request or raise an issue.
+
+---
+
+## 🖥️ Environment Recommendations
+
+Some tools in this repository—particularly [`price_list_tool`](tools/price_list_tool/)—leverage browser automation using Selenium and Google Chrome.
+
+> 🛑 **Important:** These tools **require a local graphical environment (GUI)** for proper execution.
+
+We recommend running these tools from a **native desktop environment** (such as Windows or macOS) rather than from headless or virtualized environments like WSL, Docker, or CI/CD runners, unless you have advanced configurations (e.g., WSLg or X11).
+
+This ensures compatibility with:
+- Manual login steps required by Oracle Fusion Cloud
+- Visual interaction with Oracle UI modals and components
+- ChromeDriver resolution via `webdriver-manager`
 
 ---
 

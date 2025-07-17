@@ -31,7 +31,6 @@ Thumbs.db
 *.bak
 *.tmp
 .xml
-.txt
 *.pkl  # Python pickle files
 *.swp
 

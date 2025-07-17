@@ -4,6 +4,7 @@ numpy
 requests
 unidecode
 selenium
+webdriver-manager
 beautifulsoup4
 geopy
 python-dotenv

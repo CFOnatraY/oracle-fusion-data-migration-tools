@@ -41,7 +41,7 @@ for _, row in comparison_df.iterrows():
             'ParentSourceId': row['ParentSourceId'],
             'LevelNumber': row['LevelNumber'],
             'PrimaryGeographyName_rollout': row.get('PrimaryGeographyName_rollout', ''),
-            'Issue': 'Missing in geografia_cvj_co'
+            'Issue': 'Missing in geography_file'
         })
         continue
 
