@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: detect-obfuscated-internal-terms
+        name: Detect obfuscated internal terms (e.g. word1, word2, word3, word4)
+        entry: bash .hooks/check_obfuscated_terms.sh
+        language: script
+        types: [python, text]

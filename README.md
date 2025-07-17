@@ -128,6 +128,26 @@ This ensures compatibility with:
 
 ---
 
+## 🔒 Internal Trace Prevention
+
+This repository includes a pre-commit hook designed to prevent accidental commits of internal or confidential identifiers.
+
+🛡️ For privacy and confidentiality, the terms being scanned (e.g., internal project codes or organization names) are **obfuscated** in the configuration (e.g., listed as `word1`, `word2`).
+
+These hooks are implemented using [`pre-commit`](https://pre-commit.com/) and run automatically before every commit to enforce a **zero-trace policy**.
+
+To enable them after cloning the repo:
+```bash
+pre-commit install
+```
+The hook logic is defined in:
+- .pre-commit-config.yaml
+- .hooks/check_obfuscated_terms.sh
+
+✅ These scripts are safe to version and share publicly, as they do not expose any internal company data.
+
+---
+
 ## 📄 License
 
 This project is proprietary and intended for internal use within Oracle Fusion data migration contexts.
