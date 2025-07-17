@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v1.1.0] - 2025-07-16
+## [v1.1.0] - 2025-07-17
 
 ### Added
 - Added working Selenium scripts for automating Pricing Strategies, Price Lists, and Discount Lists in Oracle Fusion (`tools/price_list_tool/`)
